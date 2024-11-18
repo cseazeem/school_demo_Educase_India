@@ -1,0 +1,11 @@
+# Redirect to index.php for non-existing files
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]
+
+# Protect uploads directory
+<FilesMatch "\.(php|php5|php7|phtml)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

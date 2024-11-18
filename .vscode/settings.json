@@ -1,0 +1,19 @@
+{
+    "php.executablePath": "/path/to/php", // Update with your PHP executable path
+    "php.validate.executablePath": "/path/to/php", // Update with your PHP executable path
+    "php.suggest.basic": false,
+    "php.validate.enable": true,
+    "liveServer.settings.wait": 500,
+    "sqltools.connections": [
+        {
+            "connectionTimeout": 30,
+            "database": "school_db",
+            "dialect": "MySQL",
+            "host": "localhost",
+            "name": "school_db",
+            "password": "ADMIN", // Update with your database password
+            "port": 3307,
+            "username": "root" // Update with your database username
+        }
+    ]
+}
